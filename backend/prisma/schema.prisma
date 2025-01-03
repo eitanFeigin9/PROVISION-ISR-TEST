@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model ip_mapping_data {
+  id          String   @id @default(uuid())
+  ipStart     BigInt
+  ipEnd       BigInt
+  countryCode String
+  countryName String
+  region      String
+  city        String
+}
+

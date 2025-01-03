@@ -1,0 +1,17 @@
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+dist/
+
+# Environment variables
+.env
+
+# Angular build files
+.angular/
+
+# System files
+.DS_Store
+Thumbs.db
